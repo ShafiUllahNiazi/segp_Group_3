@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.arshiii.tutorialsgrouping">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".Select_Student"
+            android:parentActivityName=".CreateGroup"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".Select_Group"
+            android:parentActivityName=".AddStudent" />
+        <activity
+            android:name=".All_Students"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddStudent"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CreateGroup"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AddTeacher"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AllTeachers"
+            android:label="@string/title_activity_all_teachers"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TeacherProfile"
+            android:label="@string/title_activity_teacher_profile"
+            android:parentActivityName=".All_Students"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".StudentProfile"
+            android:label="@string/title_activity_student_profile"
+            android:parentActivityName=".All_Students"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EditStudent"
+            android:parentActivityName=".All_Students" />
+        <activity android:name=".EditTeacher" />
+        <activity android:name=".SelectTeachers" />
+        <activity
+            android:name=".Group_Member_Profile"
+            android:label="@string/title_activity_group__member__profile"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".Group_Member_Profile"/>
+        <activity
+            android:name=".Group_View"
+            android:label="@string/title_activity_group__view"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".EditGroup"
+            android:parentActivityName=".Group_View"
+            android:launchMode="singleTop"/>
+        <activity android:name=".EditGroupSelectTeachers"
+            android:parentActivityName=".EditGroup"
+            android:launchMode="singleTop"/>
+        <activity android:name=".FileUploading" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

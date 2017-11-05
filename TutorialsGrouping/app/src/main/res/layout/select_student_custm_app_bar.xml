@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Platform.ThemeOverlay.AppCompat.Dark">
+
+    <CheckBox
+        android:id="@+id/select_student_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:theme="@android:style/Widget.CompoundButton.CheckBox" />
+
+    <TextView
+        android:id="@+id/select_student_custm_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/select_student_checkBox"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/select_student_checkBox"
+        android:text="Select All"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</RelativeLayout>
